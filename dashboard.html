@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard | BitCoin Company</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Meta descriptions may be included in search results to concisely summarize page content.">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">   
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <header class="header d-flex align-items-center justify-content-between">
+
+        <a href="#">
+            <img class="d-none d-md-block" src="./images/logo-nav.svg" alt="Company-logo">
+        </a>
+        <a href="#">
+            <img class="d-md-none" src="./images/logo-small.svg" alt="Company-logo">
+        </a>
+
+        <button class="menu-btn toggle-sidebar ">
+            
+            <img src="./images/menu-bar.svg" alt="menu-bar">
+        </button>
+
+        <button class="search-btn">
+            <img src="./images/search.svg" alt="search">
+        </button>
+        <input class="search-input form-control" type="text" placeholder="Search" aria-label="Search">
+        
+        <a href="#" class="btn btn-login-buy">Buy BitCoins</a>
+        <div class="dropdown notify">
+            <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                <img src="./images/ico-notification.svg" class="notification">
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <div class="dropdown profile-dropdown ">
+            <button class=" dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+                <img class="profile" src="./images/profile.png" class="profile">
+                <span>Hi, John Doe</span>
+                <img class="down-arrow" src="./images/down-arrow.svg" alt="profile-select">
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                <li><a class="dropdown-item" href="#">Help</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="main-container d-flex justify-content-center justify-content-lg-between">
+        <!-- Start Sidebar -->
+        <div class="sidebar  align-items-center flex-column justify-content-start">
+            <ul class="nav-list">
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link-active d-flex align-items-center justify-content-start" href="dashboard.html">
+                        <span class="nav-img-span"><img class="nav-img-active" src="./images/ico-dashboard.svg" alt=""></span>
+                        <span class="nav-description-active">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center justify-content-start" href="innerpage.html">
+                        <img class="nav-img" src="./images/ico-analytics.svg" alt="">
+                        <span class="nav-description">Analytics</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center justify-content-start" href="#">
+                        <img class="nav-img" src="./images/ico-resources.svg" alt="">
+                        <span class="nav-description">Resources</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center justify-content-start " href="#">
+                        <img class="nav-img" src="./images/ico-price.svg" alt="">
+                        <span class="nav-description">Price</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center justify-content-start" href="#">
+                        <img class="nav-img" src="./images/ico-community.svg" alt="">
+                        <span class="nav-description">Community</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center justify-content-start" href="#">
+                        <img  class="nav-img" src="./images/ico-info.svg" alt="">
+                        <span class="nav-description">About</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center justify-content-start" href="#">
+                        <img class="nav-img" src="./images/ico-setting.svg" alt="">
+                        <span class="nav-description">Setting</span>
+                    </a>
+                </li>
+            </ul>
+      </div>
+        <div class="overlay"></div>
+        <div class="main-content d-flex  justify-content-center flex-column">
+            <div class="dash-title">
+            <h2> Dashboard </h2>
+            </div>
+            <div class="dash-row row justify-content-center">
+                <!-- <div class="dashboard-info d-flex "> -->
+                    <div class=" col-lg-4 col-sm-6 col pb-3">
+                        <div class="dashboard-stats d-flex flex-row  justify-content-around justify-content-md-between">
+                            <!-- <div class="stat-name">My Wallet</div> -->
+                            <!-- <div class="dash-inner d-flex flex-row justify-content-between"> -->
+                            <div class="stat-left d-flex flex-column justify-content-center">
+                                <div class="stat-name">My Wallet</div>
+                                <div class="numbers">$865.2k</div>
+                                <div class="stat-last-row d-flex flex-column flex-xl-row justify-content-between">
+                                    <div class="differ positive">+$20.9k</div>
+                                    <div class="interval">Since last week </div>
+                                </div>
+                            </div>
+                            <div class="stat-right  align-items-center"><img class="dash-img" src="./images/wallet.svg" alt=""></div>
+                        </div>
+                    </div>
+                    
+                    <div class=" col-lg-4 col-sm-6 col pb-3 ">
+                        <div class="dashboard-stats d-flex flex-row justify-content-around justify-content-md-between">
+                            <div class="stat-left d-flex flex-column justify-content-center">
+                                <div class="stat-name">Profit-Ratio</div>
+                                <div class="numbers">12.57%</div>
+                                <div class="stat-last-row d-flex flex-column flex-xl-row justify-content-between">
+                                    <div class="differ negative">+2.95%</div>
+                                    <div class="interval">Since last week </div>
+                                </div>
+                            </div>
+                            <div class="stat-right  align-items-center"><img class="dash-img" src="./images/ratio.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col pb-3">
+                        <div class="dashboard-stats d-flex flex-row justify-content-around justify-content-md-between">
+                            <div class="stat-left d-flex flex-column justify-content-center">
+                                <div class="stat-name">Invested Amount</div>
+                                <div class="numbers">$4.32M</div>
+                                <div class="stat-last-row d-flex flex-column flex-xl-row justify-content-between">
+                                    <div class="differ negative">+$20.9k</div>
+                                    <div class="interval">Since last week </div>
+                                </div>
+                            </div>
+                            <div class="stat-right align-items-center"><img class="dash-img" src="./images/dollar.svg" alt=""></div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <div class="second-row row justify-content-md-center ">
+                <div class="col-xl-8 pb-3">
+                    <div class="overview">
+                        <div class="overview-title">
+                            <h4>Market Overview</h4>
+                            <div class="legend">
+                                <button class="btn" type="button">Weekly</button>
+                                <button class="btn" type="button">Monthly</button>
+                                <button class="btn active" type="button">Yearly</button>
+                            </div>
+                        </div>
+                        <img src="./images/graph.png" alt="overview" class="img-fluid">
+                    </div>
+                </div>
+                <div class=" col-md-6 col-xl-4">
+                    <div class="watchlist">
+                        <div class="watchlist-title">
+                            <h4>My Watchlist</h4>
+                            <div class="legend">
+                                <button class="btn" type="button">View All</button>
+                            </div>
+                        </div>
+                        <div class="watchlist-info">
+                            <ul>
+                                <li class="watch-items">
+                                    <div class="watch-items-top d-flex justify-content-between align-items-center">
+                                        <p class="coin-name">BitCoin</p>
+                                        <p class="coin-value">$ 34129.90</p>
+                                    </div>
+                                    <div class="watch-items-down d-flex justify-content-between align-items-center">
+                                        <p class="coin-short">BTC</p>
+                                        <p class="coin-short">+250 (+12%)</p>
+                                    </div>
+                                </li>
+                                <li class="watch-items">
+                                    <div class="watch-items-top d-flex justify-content-between align-items-center">
+                                        <p class="coin-name">Litecoin</p>
+                                        <p class="coin-value">$ 34129.90</p>
+                                    </div>
+                                    <div class="watch-items-down d-flex justify-content-between align-items-center">
+                                        <p class="coin-short">LTC</p>
+                                        <p class="coin-short">+250 (+12%)</p>
+                                    </div>
+                                </li>
+                                <li class="watch-items">
+                                    <div class="watch-items-top d-flex justify-content-between align-items-center">
+                                        <p class="coin-name">Namecoin</p>
+                                        <p class="coin-value">$ 34129.90</p>
+                                    </div>
+                                    <div class="watch-items-down d-flex justify-content-between align-items-center">
+                                        <p class="coin-short">NMC</p>
+                                        <p class="coin-short">+250 (+12%)</p>
+                                    </div>
+                                </li>
+                                <li class="watch-items">
+                                    <div class="watch-items-top d-flex justify-content-between align-items-center">
+                                        <p class="coin-name">Dogecoin</p>
+                                        <p class="coin-value">$ 34129.90</p>
+                                    </div>
+                                    <div class="watch-items-down d-flex justify-content-between align-items-center">
+                                        <p class="coin-short">DOGE</p>
+                                        <p class="coin-short">+250 (+12%)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="transaction-table">
+                <div class="transaction-title">
+                    <h4>Recent Transaction</h4>
+                    <a href="#" title="View all">View all</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">date</th>
+                                <th scope="col">transaction id</th>
+                                <th scope="col">coin name</th>
+                                <th scope="col">value</th>
+                                <th scope="col">return</th>
+                                <th scope="col">status</th>
+                                <th scope="col">action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>14/01/201</td>
+                                <td>558612</td>
+                                <td>Bitcoin</td>
+                                <td>$34567</td>
+                                <td>#12345</td>
+                                <td><span class="c">Completed</span></td>
+                                <td><img src="./images/action-dots.svg" alt=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>14/01/201</td>
+                                <td>487441</td>
+                                <td>Dogecoin</td>
+                                <td>$34567</td>
+                                <td>#12345</td>
+                                <td><span class="c">Completed</span></td>
+                                <td><img src="./images/action-dots.svg" alt=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>14/01/201</td>
+                                <td>449003</td>
+                                <td>Dogecoin</td>
+                                <td>$34567</td>
+                                <td>#12345</td>
+                                <td><span class="c">Completed</span></td>
+                                <td><img src="./images/action-dots.svg" alt=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>14/01/201</td>
+                                <td>653518</td>
+                                <td>Litecoin</td>
+                                <td>$34567</td>
+                                <td>#12345</td>
+                                <td><span class="f">Failed</span></td>
+                                <td><img src="./images/action-dots.svg" alt=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>14/01/201</td>
+                                <td>651535</td>
+                                <td>Bitcoin</td>
+                                <td>$34567</td>
+                                <td>#12345</td>                                    
+                                <td><span class="c">Completed</span></td>
+                                <td><img src="./images/action-dots.svg" alt=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>14/01/201</td>
+                                <td>558612</td>
+                                <td>Litecoin</td>
+                                <td>$34567</td>
+                                <td>#12345</td>
+                                <td><span class="c">Completed</span></td>
+                                <td><img src="./images/action-dots.svg" alt=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>14/01/201</td>
+                                <td>558612</td>
+                                <td>Dogecoin</td>
+                                <td>$34567</td>
+                                <td>#12345</td>
+                                <td><span class="f">Failed</span></td>
+                                <td><img src="./images/action-dots.svg" alt=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>14/01/201</td>
+                                <td>653518</td>
+                                <td>Bitcoin</td>
+                                <td>$34567</td>
+                                <td>#12345</td>
+                                <td><span class="c">Completed</span></td>
+                                <td><img src="./images/action-dots.svg" alt=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>14/01/201</td>
+                                <td>267400</td>
+                                <td>Litecoin</td>
+                                <td>$34567</td>
+                                <td>#12345</td>
+                                <td><span class="f">Failed</span></td>
+                                <td><img src="./images/action-dots.svg" alt=""></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+
+    </div>
+
+	<!-- JavaScripts -->
+	<script src="js/main.js"></script>    
+</body>
+</html>
