@@ -58,7 +58,7 @@
         </div>
     </header>
     <!-- End Header -->
-
+    <!-- Start Main Container --> 
     <div class="main-container d-flex justify-content-center justify-content-lg-between">
         <!-- Start Sidebar -->
         <div class="sidebar  align-items-center flex-column justify-content-start">
@@ -107,11 +107,14 @@
                 </li>
             </ul>
       </div>
+      <!-- End Sidebar -->
         <div class="overlay"></div>
+        <!-- Start Main Content -->
         <div class="main-content d-flex  justify-content-center flex-column">
             <div class="dash-title">
             <h2> Dashboard </h2>
             </div>
+            <!-- Start Dashboard Stat -->
             <div class="dash-row row justify-content-center">
                     <div class=" col-lg-4 col-sm-6 col pb-3">
                         <div class="dashboard-stats d-flex flex-row  justify-content-around justify-content-md-between">
@@ -126,7 +129,6 @@
                             <div class="stat-right  align-items-center"><img class="dash-img" src="./images/wallet.svg" alt=""></div>
                         </div>
                     </div>
-                    
                     <div class=" col-lg-4 col-sm-6 col pb-3 ">
                         <div class="dashboard-stats d-flex flex-row justify-content-around justify-content-md-between">
                             <div class="stat-left d-flex flex-column justify-content-center">
@@ -152,9 +154,10 @@
                             </div>
                             <div class="stat-right align-items-center"><img class="dash-img" src="./images/dollar.svg" alt=""></div>
                         </div>
-                    </div>
-                    
+                    </div>           
             </div>
+            <!-- End Dashboard Stat -->
+            <!-- Start Second Dashboard Row -->
             <div class="second-row row justify-content-md-center ">
                 <div class="col-xl-8 pb-3">
                     <div class="overview">
@@ -224,7 +227,8 @@
                     </div>  
                 </div>
             </div>
-
+            <!-- End Second Dashboard Row -->
+            <!-- Start Table -->
             <div class="transaction-table">
                 <div class="transaction-title">
                     <h4>Recent Transaction</h4>
@@ -251,7 +255,16 @@
                                 <td>$34567</td>
                                 <td>#12345</td>
                                 <td><span class="c">Completed</span></td>
-                                <td><img src="./images/action-dots.svg" alt=""></td>
+                                <td class="dropdown action">
+                                    <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                                        <img src="./images/action-dots.svg" class="action">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </td>
 
                             </tr>
                             <tr>
@@ -261,7 +274,16 @@
                                 <td>$34567</td>
                                 <td>#12345</td>
                                 <td><span class="c">Completed</span></td>
-                                <td><img src="./images/action-dots.svg" alt=""></td>
+                                <td class="dropdown action">
+                                    <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                                        <img src="./images/action-dots.svg" class="action">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </td>
 
                             </tr>
                             <tr>
@@ -271,7 +293,16 @@
                                 <td>$34567</td>
                                 <td>#12345</td>
                                 <td><span class="c">Completed</span></td>
-                                <td><img src="./images/action-dots.svg" alt=""></td>
+                                <td class="dropdown action">
+                                    <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                                        <img src="./images/action-dots.svg" class="action">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </td>
 
                             </tr>
                             <tr>
@@ -281,7 +312,16 @@
                                 <td>$34567</td>
                                 <td>#12345</td>
                                 <td><span class="f">Failed</span></td>
-                                <td><img src="./images/action-dots.svg" alt=""></td>
+                                <td class="dropdown action">
+                                    <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                                        <img src="./images/action-dots.svg" class="action">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </td>
 
                             </tr>
                             <tr>
@@ -291,7 +331,16 @@
                                 <td>$34567</td>
                                 <td>#12345</td>                                    
                                 <td><span class="c">Completed</span></td>
-                                <td><img src="./images/action-dots.svg" alt=""></td>
+                                <td class="dropdown action">
+                                    <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                                        <img src="./images/action-dots.svg" class="action">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </td>
 
                             </tr>
                             <tr>
@@ -301,7 +350,16 @@
                                 <td>$34567</td>
                                 <td>#12345</td>
                                 <td><span class="c">Completed</span></td>
-                                <td><img src="./images/action-dots.svg" alt=""></td>
+                                <td class="dropdown action">
+                                    <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                                        <img src="./images/action-dots.svg" class="action">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </td>
 
                             </tr>
                             <tr>
@@ -311,7 +369,16 @@
                                 <td>$34567</td>
                                 <td>#12345</td>
                                 <td><span class="f">Failed</span></td>
-                                <td><img src="./images/action-dots.svg" alt=""></td>
+                                <td class="dropdown action">
+                                    <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                                        <img src="./images/action-dots.svg" class="action">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </td>
 
                             </tr>
                             <tr>
@@ -321,7 +388,16 @@
                                 <td>$34567</td>
                                 <td>#12345</td>
                                 <td><span class="c">Completed</span></td>
-                                <td><img src="./images/action-dots.svg" alt=""></td>
+                                <td class="dropdown action">
+                                    <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                                        <img src="./images/action-dots.svg" class="action">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </td>
 
                             </tr>
                             <tr>
@@ -331,19 +407,27 @@
                                 <td>$34567</td>
                                 <td>#12345</td>
                                 <td><span class="f">Failed</span></td>
-                                <td><img src="./images/action-dots.svg" alt=""></td>
+                                <td class="dropdown action">
+                                    <button class=" dropdown-toggle " type="button" data-bs-toggle="dropdown">
+                                        <img src="./images/action-dots.svg" class="action">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </td>
 
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-                <!-- </div> -->
-            <!-- </div> -->
+            <!-- End Table -->
         </div>
+        <!-- End Main Content -->
     </div>
-
-    </div>
+    <!-- End Main  -->
 
 	<!-- JavaScripts -->
 	<script src="js/main.js"></script>    

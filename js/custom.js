@@ -53,7 +53,9 @@ $(document).ready(function() {
 		$("body").toggleClass("sidebar-open")	
 	});
 
-
+	$(".btn-search,.btn-close-search").click(function () {
+		$("body").toggleClass("search-open");
+	});
 
 
 	// Don't add anything below this --------------------------------------------------------------

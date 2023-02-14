@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <!-- Start Header -->
     <header class="header d-flex align-items-center justify-content-between">
 
@@ -109,7 +108,9 @@
                 </li>
             </ul>
         </div>
+        <!-- End Sidebar -->
         <div class="overlay"></div>
+        <!-- Start Main Content -->
         <div class="main-content d-flex  justify-content-center flex-column">
             <div class="inner-title">
                 <h2> Analytics </h2>
@@ -117,11 +118,11 @@
             <div class="inner-page-form">
                 <!-- Start One Column -->
                 <h5>One Column</h5>
-                <div class="form-floating">
+                <div class="form-floating mb-2 mb-md-3">
                     <input type="text" class="form-control" placeholder="Username">
                     <label>Full Name</label>
                 </div>
-                <div class="form-floating custom-dropdown">
+                <div class="form-floating custom-dropdown mb-2 mb-md-3">
                     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                         <option selected>Select Designation</option>
                         <option value="1">One</option>
@@ -139,25 +140,31 @@
                 <!-- Start Two Column -->
                 <h5 class="rest-columns">Two Column</h5>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-2 mb-md-3">
                         <div class="form-floating">
                             <input type="text" class="form-control" value="John Doe">
                             <label>First Name</label>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-2 mb-md-3">
                         <div class="two-col-user form-floating">
                             <input type="text" class="form-control" value="@johndoe">
                             <label>Username</label>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="password" class="form-control password" placeholder="Password">
-                            <label>Password</label>
+                    <div class="col-md-6 ">
+                        <div class="input-group has-validation pass-valid">
+                            <div class="form-floating is-invalid">
+                                <input type="password" class="form-control password" placeholder="Password">
+                              <label for="floatingInputGroup2">Password</label>
+                              <!-- <button class="btn show-password" type="button"><img src="/images/ico-eye.svg"alt="password"></button> -->
+                            </div>
+                            <div class="invalid-feedback">
+                                At least 8 Characters
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 ">
                         <div class="input-group has-validation">
                             <div class="form-floating is-invalid">
                               <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
@@ -174,54 +181,64 @@
                 <!-- Start Three Column -->
                 <h5 class="rest-columns">Three Column</h5>
                 <div class="row">
-                    <div class="three-col col-lg-4 col-md-6">
+                    <div class="three-col col-lg-4 col-md-6 mb-2 mb-md-3">
                         <div class="form-floating">
                             <input type="text" class="form-control" placeholder="Full Name">
                             <label>Full Name</label>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="form-floating">
-                            <input type="password" class="form-control password" placeholder="Password">
-                            <label>Password</label>
+                    <div class="col-lg-4 col-md-6 mb-2 mb-md-3">
+                        <div class=" form-floating">
+                            <input type="text" class="form-control" value="John">
+                            <label>Last Name</label>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                    <div class="form-floating">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>Designer</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <label for="floatingSelect">Designation</label>
-                      </div>
-                      </div>
+                    <div class="col-lg-4 col-md-6 mb-2 mb-md-3">
+                        <div class="form-floating custom-dropdown">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Designer</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Designation</label>
+                          </div>
+                </div>
                 </div>
                 <!-- End Three Column -->
 
                 <!-- Start Four Column -->
                 <h5 class="rest-columns">Four Column</h5>
                 <div class="row">
-                    <div class="col-xl-3 col-md-6">
+                    <div class="col-xl-3 col-md-6 mb-2 mb-md-3">
                         <div class="form-floating">
                             <input type="text" class="form-control" value="John Doe">
                             <label>First Name</label>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
+                    <div class="col-xl-3 col-md-6 mb-2 mb-md-3">
                         <div class="two-col-user form-floating">
                             <input type="text" class="form-control" value="@johndoe">
                             <label>Username</label>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="form-floating">
+                    <div class="col-xl-3 col-md-6 mb-2 mb-md-3">
+                        <!-- <div class="form-floating">
                             <input type="password" class="form-control password" placeholder="Password">
                             <label>Password</label>
+                        </div> -->
+                        <div class="input-group has-validation pass-valid">
+                            <div class="form-floating is-invalid">
+                                <input type="password" class="form-control password" placeholder="Password">
+                              <label for="floatingInputGroup2">Password</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                At least 8 Characters
+                            </div>
                         </div>
+                    
                     </div>
-                    <div class="col-xl-3 col-md-6">
+                    <div class="col-xl-3 col-md-6 mb-2 mb-md-3">
                         <div class="input-group has-validation">
                             <div class="form-floating is-invalid">
                               <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
@@ -235,7 +252,7 @@
                 </div>
                 <!-- End Four Column -->
 
-                <!-- Start Other Design Elements -->
+                <!-- Start Other Form Elements -->
                 <h5 class="others">Other Form Elements</h5>
                 <h6>File Upload</h6>
                 <div class="file-upload  input-group">
@@ -277,15 +294,9 @@
                     <button class="btn btn-primary">Primary</button>
                     <button class="btn btn-secondary">Secondary</button>
                 </div>
-
-
-
-                <!-- End Other Design Elements -->
+                <!-- End Other Form Elements -->
             </div>
-
-
-
-
+            <!-- Start Tabbing Box -->
             <div class="tabbing-box">
                 <h5>Tabbing</h5>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -326,8 +337,10 @@
                     </div>
                 </div>
             </div>
+            <!-- End Tabbing Box -->
 
         </div>
+        <!-- End Main Content -->
     </div>
 
     </div>
